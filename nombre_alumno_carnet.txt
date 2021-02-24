@@ -1,7 +1,3 @@
-progra2
-balbino aylagas
-esen feb 2021
-
-nombre completo:
-github url:
-progra2
+nombre completo: Diego Francisco Arévalo del Río
+github url: https://github.com/DiegodelRio28/Parcial-progra2.git
+progra 2
