@@ -1,20 +1,27 @@
 // Find a <table> element with id="myTable":
 function add() {
-    var table = document.getElementById("tbl");
-    var row = table.insertRow(0);
     var fecha = document.getElementById("fecha").value;
     var bebida = document.getElementById("bebida").value;
     var cantidad = document.getElementById("cantidad").value;
+    // if(_nom.trim()==''){
+    //     alert("Ingrese nombre del producto");
+    // }
+    // if(_cat.trim()==''){
+    //     alert("Ingrese categoria del producto");
 
+    // }
+    // if(_precio.trim()==''){
+    //     alert("Ingrese precio del producto");
 
-    var fecha = row.insertCell(0);
-    var bebida = row.insertCell(1);
-    var cantidad = row.insertCell(2);
+    // }
+    // if(_stock.trim()==''){
+    //     alert("Ingrese stock del producto");
 
+    // }
 
-    fecha.innerHTML = document.getElementById("fecha").value;
-    bebida.innerHTML = document.getElementById("bebida").value;
-    cantidad.innerHTML = document.getElementById("cantidad").value;
+    var fila = "<tr><td>" + _nom + "</td><td>" + _cat + "</td><td>" + _precio + "</td><td>" + _stock + "</td></tr>";
+
+    document.getElementById("tbl").innerHTML = fila;
 }
 
 
