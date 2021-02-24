@@ -1,0 +1,44 @@
+<!--Crear un index.html con lo básico de html5 para iniciar una página más un formulario que
+pida una fecha, un tipo de bebida (agua, cocacola, café, etc) y la cantidad de vasos al dar
+click en el boton enviar debe agregar una fila a la tabla que se encuentra abajo del
+formulario. Para todo registro de una misma fecha, debe revisar si se tienen 8 vasos de agua
+en esa fecha y si no lo tiene la ultima columna debe decir “tomar mas agua”, si ya se
+alcanzaron los 8 vasos de agua para una misma fecha debe decir “meta alcanzada”.-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+
+<body>
+    <h1>Drink control</h1>
+
+    <h2>todo list</h2>
+    <label for="">Fecha*</label>
+    <input type="date" name="fecha" id="fecha" placeholder="DO NOT LIE">
+    <br><br>
+    <label for="">Bebida*</label>
+    <input type="text" name="bebida" id="bebida" placeholder="What did you drink?">
+    <br><br>
+    <label for="">Cantidad* en vasos</label>
+    <input type="text" name="cantidad" id="cantidad" placeholder="Are you drunk?">
+    <br><br>
+    <button type="button" id="add" onClick="add()"> Add </button>
+    <br><br>
+    <table id="tbl">
+        <tr>
+            <th>Fecha</th>
+            <th>Bebida</th>
+            <th>Cantidad</th>
+        </tr>
+
+    </table>
+
+    <script src="/pregunta3/script.js"></script>
+</body>
+
+</html>
